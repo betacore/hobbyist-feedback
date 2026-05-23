@@ -2,12 +2,12 @@
 
 Willkommen beim offiziellen Community-Feedback-Projekt von **Hobbyist** 💚
 
-Hier kannst du:
+Hier kannst du direkt:
 
-- 🐛 Fehler melden
-- ✨ neue Features vorschlagen
-- 💬 Feedback geben
-- 💡 Ideen diskutieren
+- 🐛 [Fehler melden](https://github.com/betacore/hobbyist-feedback/issues/new/choose)
+- ✨ [Neue Features vorschlagen](https://github.com/betacore/hobbyist-feedback/issues/new/choose)
+- 💬 [Feedback geben](https://github.com/betacore/hobbyist-feedback/issues/new/choose)
+- 💡 [Ideen diskutieren](https://github.com/betacore/hobbyist-feedback/discussions)
 - 👍 Vorschläge anderer bewerten
 
 ---
@@ -37,57 +37,31 @@ Ziel ist es:
 
 ---
 
-# 🚀 Wie kann ich Feedback geben?
+# 👍 Voting & Community Feedback
 
-## 🐛 Bug melden
+Du kannst bestehende Bugs oder Features unterstützen.
 
-Wenn etwas nicht funktioniert:
+## So funktioniert Voting auf GitHub
 
-- Fehler
-- Abstürze
-- falsches Verhalten
-- UI-Probleme
-- Performanceprobleme
-
-Gehe zu:
+Öffne ein Issue oder eine Discussion und nutze:
 
 ```txt
-Issues → New Issue → Bug Report
+👍 Reactions
 ```
 
----
+Je mehr 👍 ein Beitrag erhält:
+- desto wichtiger ist er für die Community
+- desto besser können wir priorisieren
+- desto sichtbarer wird das Thema
 
-## ✨ Feature vorschlagen
+👉 Bitte erst suchen bevor du ein neues Ticket erstellst.
 
-Wenn du:
+Wenn bereits ein passendes Ticket existiert:
+- 👍 reagieren
+- kommentieren
+- zusätzliche Infos ergänzen
 
-- eine neue Idee hast
-- eine Verbesserung möchtest
-- einen neuen Usecase vorschlagen willst
-
-Gehe zu:
-
-```txt
-Issues → New Issue → Feature Request
-```
-
----
-
-## 💬 Diskussionen & Ideen
-
-Für:
-
-- Brainstorming
-- allgemeine Diskussionen
-- Communityideen
-- Feedback
-- Showcase
-
-Nutze:
-
-```txt
-Discussions
-```
+statt ein Duplikat zu erstellen.
 
 ---
 
@@ -147,23 +121,6 @@ Wir nutzen Labels zur Organisation:
 
 ---
 
-# 👍 Voting & Community Feedback
-
-Du kannst:
-
-- 👍 auf Issues reagieren
-- 💬 kommentieren
-- Ideen unterstützen
-- Diskussionen führen
-
-So sehen wir:
-
-- welche Features wichtig sind
-- welche Bugs viele betreffen
-- welche Ideen beliebt sind
-
----
-
 # 🔒 Sicherheit
 
 Bitte poste **keine Sicherheitslücken öffentlich**.
@@ -184,6 +141,7 @@ Bitte:
 - respektvoll diskutieren
 - keine Duplikate erstellen
 - konstruktiv bleiben
+- andere Meinungen respektieren
 
 ---
 
@@ -192,6 +150,10 @@ Bitte:
 ## Webseite
 
 https://hobbyist.community-project.eu
+
+## Issues
+
+https://github.com/betacore/hobbyist-feedback/issues
 
 ## Discussions
 
