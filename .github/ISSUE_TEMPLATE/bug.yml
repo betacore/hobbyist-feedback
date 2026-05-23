@@ -1,31 +1,86 @@
-- type: dropdown
-  id: area
-  attributes:
-    label: Bereich
-    options:
-      - Account/Login
-      - Events
-      - Gruppen
-      - Vereine
-      - Verbände
-      - Suche
-      - Karten
-      - Notifications
-      - UI/UX
-      - Performance
-      - Mobile
-      - Sonstiges
-  validations:
-    required: true
-    
-- type: dropdown
-  id: priority
-  attributes:
-    label: Priorität
-    options:
-      - Niedrig
-      - Mittel
-      - Hoch
-      - Kritisch
+name: 🐛 Bug Report
+description: Fehler oder unerwartetes Verhalten melden
+title: "[Bug]: "
 labels:
   - bug
+  - needs-triage
+
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Bereich
+      options:
+        - Account/Login
+        - Events
+        - Gruppen
+        - Vereine
+        - Verbände
+        - Suche
+        - Karten
+        - Notifications
+        - UI/UX
+        - Performance
+        - Mobile
+        - Sonstiges
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priorität
+      options:
+        - Niedrig
+        - Mittel
+        - Hoch
+        - Kritisch
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Fehlerbeschreibung
+      description: Beschreibe den Fehler möglichst genau
+      placeholder: |
+        Was ist passiert?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Schritte zum Reproduzieren
+      placeholder: |
+        1. Gehe zu ...
+        2. Klicke auf ...
+        3. Fehler erscheint ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Plattform
+      options:
+        - Android
+        - iOS
+        - Web/Desktop
+        - Alle
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots oder Logs
+      description: Optional
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Zustimmung
+      options:
+        - label: Ich habe geprüft, dass dieser Fehler nicht bereits gemeldet wurde
+          required: true
