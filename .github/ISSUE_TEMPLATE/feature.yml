@@ -1,0 +1,112 @@
+name: ✨ Feature Request
+description: Neue Funktion oder Verbesserung für Hobbyist vorschlagen
+title: "[Feature]: "
+labels:
+  - feature
+  - needs-triage
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke für deinen Vorschlag 💚  
+        Beschreibe möglichst genau:
+        - welches Problem existiert
+        - welche Lösung du dir vorstellst
+        - warum das hilfreich wäre
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Bereich
+      description: Welcher Bereich ist betroffen?
+      options:
+        - Account/Login
+        - Profil
+        - Events
+        - Gruppen
+        - Vereine
+        - Verbände/Ligen
+        - Suche
+        - Karten/Map
+        - Notifications
+        - Gamification
+        - QR-Codes
+        - Mobile App
+        - Desktop/Web
+        - UI/UX
+        - Performance
+        - Datenschutz
+        - Sonstiges
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Plattform
+      options:
+        - Android
+        - iOS
+        - Web/Desktop
+        - Alle
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Wichtigkeit
+      description: Wie wichtig ist dieses Feature aus deiner Sicht?
+      options:
+        - Niedrig
+        - Mittel
+        - Hoch
+        - Sehr hoch
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Welches Problem soll gelöst werden?
+      description: Beschreibe das aktuelle Problem oder den fehlenden Usecase
+      placeholder: |
+        Beispiel:
+        Ich möchte Gruppen einfacher verwalten können...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Lösungsidee
+      description: Wie stellst du dir die Funktion vor?
+      placeholder: |
+        Beispiel:
+        Gruppen sollten Rollen besitzen und...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Lösungen
+      description: Gibt es Alternativen oder andere Ideen?
+
+  - type: textarea
+    id: mockups
+    attributes:
+      label: Screenshots, Mockups oder Beispiele
+      description: Optional Links oder Bilder einfügen
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Zustimmung
+      options:
+        - label: Ich habe geprüft, dass dieses Feature nicht bereits existiert
+          required: true
+
+        - label: Ich stimme zu, dass mein Vorschlag öffentlich sichtbar ist
+          required: true
