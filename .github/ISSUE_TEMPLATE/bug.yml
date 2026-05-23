@@ -1,0 +1,31 @@
+- type: dropdown
+  id: area
+  attributes:
+    label: Bereich
+    options:
+      - Account/Login
+      - Events
+      - Gruppen
+      - Vereine
+      - Verbände
+      - Suche
+      - Karten
+      - Notifications
+      - UI/UX
+      - Performance
+      - Mobile
+      - Sonstiges
+  validations:
+    required: true
+    
+- type: dropdown
+  id: priority
+  attributes:
+    label: Priorität
+    options:
+      - Niedrig
+      - Mittel
+      - Hoch
+      - Kritisch
+labels:
+  - bug
