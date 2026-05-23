@@ -1,0 +1,28 @@
+name: Sync feedback issues to private project
+on:
+  issues:
+    types:
+      - opened
+
+permissions:
+  contents: read
+  issues: read
+
+jobs:
+  add-to-project:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add issue to private project
+        uses: actions/add-to-project@v2
+        with:
+          project-url: https://github.com/users/betacore/projects/12
+          github-token: ${{ secrets.PROJECT_TOKEN }}   # PAT statt GITHUB_TOKEN
+
+      - name: Set status to Verify
+        uses: leonsteinhaeuser/project-beta-automations@v2.1.0
+        with:
+          gh_token: ${{ secrets.PROJECT_TOKEN }}        # PAT statt GITHUB_TOKEN
+          organization: betacore
+          project_id: 12
+          resource_node_id: ${{ github.event.issue.node_id }}
+          status_value: Verify
